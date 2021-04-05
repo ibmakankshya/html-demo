@@ -1,21 +1,52 @@
+body {
+  margin:50px 0; 
+  padding:0;
+  text-align:center;
+}
 h3{
-    color: blue;
+  color: blueviolet;
+    font-size: 20;
 }
 h4{
     color: blueviolet;
-    font-size: 14;
+    font-size: 16;
+}
+h5{
+  color: blueviolet;
+  font-size: 16;
 }
 table {
     font-family: arial, sans-serif;
+    color: blueviolet;
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
+    text-align: center;
   }
-  
-  td, th {
+  td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    color: cornflowerblue;
+    text-align: center;
+  }
+  
+   th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
   }
   button{
-      
+      color: cornflowerblue;
+  }
+  input[type= radio]{
+    color: cornflowerblue;
+    font-style: italic;
+  }
+  label{
+    color: cornflowerblue;
+  }
+  .center{
+    margin-left: auto;
+  margin-right: auto;
   }

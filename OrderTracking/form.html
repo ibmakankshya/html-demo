@@ -5,11 +5,11 @@
     <title> Order Recording</title>
 </head>
 
-<body>
+<body text-align-center>
     <h3>
-        Display of the orders:
+        Available Items of Companies:
     </h3>
-    <table>
+    <table class ="center">
         <thead>
             <th>Laptop</th>
             <th>Mobiles</th>
@@ -27,17 +27,39 @@
                 <td>HP</td>
                 <td>Samsung</td>
             </tr>
+            <tr>
+                <td>OneNext</td>
+                <td>Redmi</td>
+            </tr>
         </tbody>
-    </table>
-    <form>
+    </table><br>
+    <form >
+        <div>
+            <h5>Choose Type of Order:</h5>
+            <input type="radio" name="type" > <label>Domestic</label>
+            <input type="radio" name="type"> <label>International</label>
+        </div>
         <div>
             <h4> Enter the Item u wish to buy:</h4>
-            <input type="text" placeholder="Item">
+            <input type="text" placeholder="Item" onchange="next()">
         </div>
         <div>
             <h4> Enter the Company Name:</h4>
-            <input type="text" placeholder="Company">
+            <input type="text" placeholder="Company" onchange="next()">
         </div>
+    
+            <h5>Enter the date in which you wish to recive your order:
+            <input type="date">
+        </h5>
+        
+            <h5>How to you wish to make the payment:
+           <select>
+                <option value="Option1">Credit Card</option>
+                <option value="Option2">Debit Card</option>
+                <option value="Option3"> Net Banking</option>
+                <option value="Option4"> Cash On delivery</option>
+            </select>
+        </h5>
     </form>
     <div>
         <button onclick="save()">Submit</button>
