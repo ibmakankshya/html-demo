@@ -1,3 +1,48 @@
 <html>
-    
+<link rel="stylesheet" href="form.css">
+
+<head>
+    <title> Order Recording</title>
+</head>
+
+<body>
+    <h3>
+        Display of the orders:
+    </h3>
+    <table>
+        <thead>
+            <th>Laptop</th>
+            <th>Mobiles</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ThinkPad</td>
+                <td>OnePlus</td>
+            </tr>
+            <tr>
+                <td>DELL</td>
+                <td>Apple</td>
+            </tr>
+            <tr>
+                <td>HP</td>
+                <td>Samsung</td>
+            </tr>
+        </tbody>
+    </table>
+    <form>
+        <div>
+            <h4> Enter the Item u wish to buy:</h4>
+            <input type="text" placeholder="Item">
+        </div>
+        <div>
+            <h4> Enter the Company Name:</h4>
+            <input type="text" placeholder="Company">
+        </div>
+    </form>
+    <div>
+        <button onclick="save()">Submit</button>
+    </div>
+
+</body>
+<script src= "form.js"></script>
 </html>
