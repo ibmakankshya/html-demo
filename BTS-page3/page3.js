@@ -139,25 +139,31 @@ function generate_table() {
         th.innerHTML = col[i];
         tr.appendChild(th);
     }
-    let p= document.getElementById("bugID");
-    for (var i = 0; i < Bugs.length; i++){
-        // look for the entry with a matching `code` value
-        if (Bugs[i].Bug_ID == p){
-           // we found it
-          console.log("found it!");
-        }
-      }
+    var p= document.getElementById("bugID").value;
+    console.log(p);
+    // for (var i = 0; i < Bugs.length; i++){
+    //     // look for the entry with a matching `code` value
+    //     if (Bugs[i].Bug_ID == p){
+    //        // we found it
+    //       console.log("found it!");
+    //     }
+    //   }
     // ADD JSON DATA TO THE TABLE AS ROWS.
+  
      for (var i = 0; i < Bugs.length; i++) {
-         let x;
-    //Bugs.search
-    
+         
          tr = table.insertRow(-1);
 
          for (var j = 0; j < col.length; j++) {
          var tabCell = tr.insertCell(-1);
-             tabCell.innerHTML = Bugs[i][col[j]];
-        }
+         if (Bugs[i].Bug_ID == p){
+            tabCell.innerHTML = Bugs[i][col[j]];
+           console.log("found it!");
+           
+         }
+        
+       }
+        
      }
     
 
